@@ -82,8 +82,6 @@ public class FlightSchedule {
         }
         
         int max_flight_hours = Collections.max(mp.values());
-        
-        
         return max_flight_hours;
     }
     
@@ -96,7 +94,9 @@ public class FlightSchedule {
         
         String[] departure = {"20:18:18", "19:16:23", "20:18:06"}; 
         String[] arrival = {"21:10:19", "20:18:24", "21:07:07"};
+        
         ArrayList<FlightSchedule> arr= new ArrayList<FlightSchedule>();
+        
         for(int i = 0; i<departure.length; i++){
             arr.add(new FlightSchedule(departure[i], arrival[i]));
         }
